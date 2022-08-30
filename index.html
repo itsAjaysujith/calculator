@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calcop.css">
+</head>
+<body>
+    
+    <div class="container">
+   
+      <input type="text" id="screen">
+      <div class="first-row">
+        <button type="submit" onclick="clearit()" class="global">CLEAR</button>
+        <button type="submit" name=""  onclick="removeNum()"  class="global">DEL</button>
+        <button type="submit" name="" onclick="btclick('/')"  class="global">/</button>
+        <button type="submit"  name="" onclick="btclick('*')"  class="global">*</button>
+      </div>
+      <div class="second-row">
+        <button type="submit" name="" onclick="btclick(7)"  class="global">7</button>
+          <button type="submit" name="" onclick="btclick(8)"  class="global">8</button>
+          <button type="submit" name="" onclick="btclick(9)"  class="global">9</button>
+          <button type="submit"  name="" onclick="btclick('-')"   class="global">-</button>
+      </div>
+      <div class="third-row">
+        <button type="submit" name="" onclick="btclick(4)"  class="global">4</button>
+          <button type="submit" name="" onclick="btclick(5)"  class="global">5</button>
+          <button type="submit" name="" onclick="btclick(6)"  class="global">6</button>
+          <button type="submit"  name="" onclick="btclick('+')"  class="global">+</button>
+      </div>
+      <div class="fourth-row">
+        <button type="submit" name="" onclick="btclick(1)"  class="global">1</button>
+          <button type="submit" name="" onclick="btclick(2)"  class="global">2</button>
+          <button type="submit" name="" onclick="btclick(3)"  class="global">3</button>
+          
+      </div>
+      <div class="conflict">
+        <div class="left">
+          <button type="submit" onclick="btclick(0)" class=" big">0</button>
+          <button type="submit" onclick="btclick('.')" class=" small">.</button>
+
+        </div>
+        <div class="right">
+          <button type="submit" onclick="Evaluateop()"  class="global grey plus">=</button>
+        </div>
+      </div>
+    </div>
+</body>
+<script src="./calc.js"></script>
+
+</html>
